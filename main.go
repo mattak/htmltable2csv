@@ -76,7 +76,9 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "htmltable2csv"
 	app.Usage = "html table structure to csv"
+	app.Description = "argument filename is optional. default input is from stdin."
 	app.Version = "0.0.1"
+	app.UsageText = "htmltable2csv [global options] [argument_filename]"
 	app.Action = func(c *cli.Context) error {
 		var reader io.Reader
 
