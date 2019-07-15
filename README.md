@@ -32,3 +32,16 @@ GLOBAL OPTIONS:
    --version, -v  print the version
 ```
 
+```shell
+$ cat << __HTML__ | htmltable2csv
+<table>
+<tr><th>ID</th><th>NAME</th></tr>
+<tr><td>1</td><td>one</td></tr>
+<tr><td>2</td><td>two</td></tr>
+</table>
+__HTML__
+ID,NAME
+1,one
+2,two
+```
+
